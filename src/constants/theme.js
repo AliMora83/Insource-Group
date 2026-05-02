@@ -1,0 +1,12 @@
+export const PURPLE       = "#8B1F7A";
+export const PURPLE_DARK  = "#6A1660";
+export const PURPLE_LIGHT = "#B04EA0";
+export const PURPLE_TINT  = "#F7EFF6";
+export const PURPLE_TINT2 = "#EDD9EA";
+export const CHARCOAL     = "#1C1C1E";
+export const BODY         = "#4A4A55";
+export const MUTED        = "#8A8A97";
+export const WHITE        = "#FFFFFF";
+export const OFF_WHITE    = "#FAFAF9";
+export const LIGHT_GRAY   = "#F3F2F0";
+export const BORDER       = "rgba(139,31,122,0.12)";
