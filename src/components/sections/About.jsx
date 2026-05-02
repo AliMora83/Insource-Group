@@ -11,16 +11,14 @@ export function About() {
         <Reveal dir="left">
           <div style={{ position:"relative" }}>
             <div style={{ background:PURPLE_TINT, borderRadius:4, aspectRatio:"4/5", display:"flex", alignItems:"center", justifyContent:"center", border:`1px solid ${BORDER}`, position:"relative", overflow:"hidden" }}>
-              {/* Giant bg letters */}
-              <span className="serif" style={{ position:"absolute", fontSize:200, fontWeight:700, lineHeight:1, color:"rgba(139,31,122,.05)", userSelect:"none", letterSpacing:"-.04em" }}>IG</span>
-              {/* Center mark */}
-              <div style={{ position:"relative", textAlign:"center" }}>
-                <div style={{ width:68, height:68, borderRadius:"50%", background:PURPLE, margin:"0 auto 16px", display:"flex", alignItems:"center", justifyContent:"center" }}>
-                  <span className="serif" style={{ fontSize:30, fontWeight:700, color:WHITE }}>I</span>
-                </div>
-                <div style={{ fontFamily:"'DM Sans',sans-serif", fontWeight:500, fontSize:22, color:CHARCOAL, letterSpacing:".04em" }}>In<span style={{ color:PURPLE }}>Source</span>.</div>
-                <div style={{ fontSize:10, letterSpacing:".2em", textTransform:"uppercase", color:MUTED, marginTop:4 }}>Group</div>
-              </div>
+              {/* Real brand photo */}
+              <img
+                src="/NACAFRIDAY_627.JPG"
+                alt="InSource Group at NACAFRIDAY"
+                style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top" }}
+              />
+              {/* Subtle gradient overlay so badges stay legible */}
+              <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top, rgba(0,0,0,.35) 0%, transparent 50%)" }} />
               <div style={{ position:"absolute", top:20, left:20, background:WHITE, border:`1px solid ${BORDER}`, borderRadius:2, padding:"7px 14px", fontSize:9, letterSpacing:".16em", textTransform:"uppercase", color:PURPLE, fontWeight:500 }}>Woman-Owned</div>
               <div style={{ position:"absolute", bottom:20, right:20, background:PURPLE, borderRadius:2, padding:"7px 14px", fontSize:9, letterSpacing:".14em", textTransform:"uppercase", color:WHITE, fontWeight:500 }}>Multi-Service</div>
             </div>
