@@ -20,7 +20,7 @@ export function Services() {
           </div>
         </Reveal>
 
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(210px, 1fr))", gap:18 }}>
+        <div className="services-grid" style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(210px, 1fr))", gap:18 }}>
           {SERVICES.map(({ num, icon, title, desc }, i) => (
             <Reveal key={num} delay={i * 90}>
               <div className="svc-card" style={{ height:"100%" }}>

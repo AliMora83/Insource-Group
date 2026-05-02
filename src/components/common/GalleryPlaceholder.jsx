@@ -28,6 +28,7 @@ export function GalleryPlaceholder({ index, label, image, style = {} }) {
         <img
           src={image}
           alt={label}
+          loading="lazy"
           style={{
             position: "absolute", inset: 0, width: "100%", height: "100%",
             objectFit: "cover", zIndex: 0,

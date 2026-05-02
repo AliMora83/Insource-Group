@@ -16,7 +16,7 @@ export function Team() {
           </div>
         </Reveal>
 
-        <div style={{ display:"grid", gridTemplateColumns:"1.1fr 1fr", gap:80, alignItems:"center" }}>
+        <div className="team-grid" style={{ display:"grid", gridTemplateColumns:"1.1fr 1fr", gap:80, alignItems:"center" }}>
           <Reveal dir="left" delay={100}>
             <p style={{ fontSize:16, lineHeight:2, color:BODY, marginBottom:24, fontWeight:300 }}>
               Insource Group is proudly woman-owned, led by a visionary founder with a strong focus on delivering innovative, reliable, and high-quality solutions across multiple service areas.

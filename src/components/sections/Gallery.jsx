@@ -24,7 +24,7 @@ export function Gallery() {
         </Reveal>
 
         {/* Masonry-style grid */}
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(12, 1fr)", gridAutoRows:"minmax(200px,auto)", gap:14 }}>
+        <div className="gallery-grid" style={{ display:"grid", gridTemplateColumns:"repeat(12, 1fr)", gridAutoRows:"minmax(200px,auto)", gap:14 }}>
 
           {/* Large feature — col 1-8, row 1-2 */}
           <div style={{ gridColumn:"1 / 8", gridRow:"1 / 3" }}>

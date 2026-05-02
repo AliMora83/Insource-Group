@@ -5,7 +5,7 @@ import { Label } from "../common/Label";
 export function About() {
   return (
     <section id="about" style={{ padding:"120px 64px", background:WHITE }}>
-      <div style={{ maxWidth:1140, margin:"0 auto", display:"grid", gridTemplateColumns:"1fr 1fr", gap:96, alignItems:"center" }}>
+      <div className="about-grid" style={{ maxWidth:1140, margin:"0 auto", display:"grid", gridTemplateColumns:"1fr 1fr", gap:96, alignItems:"center" }}>
 
         {/* Brand graphic */}
         <Reveal dir="left">
@@ -15,6 +15,7 @@ export function About() {
               <img
                 src="/NACAFRIDAY_627.JPG"
                 alt="InSource Group at NACAFRIDAY"
+                loading="lazy"
                 style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top" }}
               />
               {/* Subtle gradient overlay so badges stay legible */}

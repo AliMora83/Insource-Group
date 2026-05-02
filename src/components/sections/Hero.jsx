@@ -18,14 +18,14 @@ export function Hero() {
       </svg>
 
       {/* Two-column layout: text left, carousel right */}
-      <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:56, alignItems:"center", width:"100%", maxWidth:1280, margin:"0 auto" }}>
+      <div className="hero-grid" style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:56, alignItems:"center", width:"100%", maxWidth:1280, margin:"0 auto" }}>
 
         {/* LEFT — copy */}
-        <div style={{ position:"relative" }}>
+        <div className="hero-text" style={{ position:"relative" }}>
           <div style={{ animation:"fadeUp .7s ease .2s both" }}>
             <Label>Proudly Woman-Owned · Carletonville, SA</Label>
           </div>
-          <h1 className="serif" style={{
+          <h1 className="serif hero-title" style={{
             fontSize:"clamp(38px,5.5vw,80px)", fontWeight:400, lineHeight:1.05,
             letterSpacing:"-.02em", marginBottom:24, color:CHARCOAL,
             animation:"fadeUp .9s ease .38s both",
@@ -37,13 +37,13 @@ export function Hero() {
           <p style={{ fontSize:15, lineHeight:1.9, color:BODY, maxWidth:420, marginBottom:40, fontWeight:300, animation:"fadeUp .9s ease .54s both" }}>
             A dynamic multi-service company delivering innovative solutions across events, branding, supply, and production — with creativity and precision at our core.
           </p>
-          <div style={{ display:"flex", gap:14, flexWrap:"wrap", animation:"fadeUp .9s ease .68s both" }}>
+          <div style={{ display:"flex", gap:14, flexWrap:"wrap", animation:"fadeUp .9s ease .68s both", justifyContent: "inherit" }}>
             <a href="#services" className="btn-primary">Explore Services</a>
             <a href="#contact" className="btn-outline">Start a Project</a>
           </div>
 
           {/* Stats row */}
-          <div style={{ display:"flex", gap:40, flexWrap:"wrap", marginTop:48, animation:"fadeUp .9s ease .85s both" }}>
+          <div className="hero-stats" style={{ display:"flex", gap:40, flexWrap:"wrap", marginTop:48, animation:"fadeUp .9s ease .85s both" }}>
             {[{n:"5+",l:"Service Areas"},{n:"100%",l:"Client Focused"},{n:"∞",l:"Creative Energy"}].map(s => (
               <div key={s.n} style={{ display:"flex", alignItems:"center", gap:12 }}>
                 <span className="serif" style={{ fontSize:34, fontWeight:400, color:PURPLE, lineHeight:1 }}>{s.n}</span>
@@ -54,7 +54,7 @@ export function Hero() {
         </div>
 
         {/* RIGHT — Image Carousel */}
-        <div style={{ position:"relative", animation:"fadeUp .9s ease .5s both", height:"clamp(400px,60vh,680px)" }}>
+        <div className="hero-carousel-container" style={{ position:"relative", animation:"fadeUp .9s ease .5s both", height:"clamp(400px,60vh,680px)" }}>
           <HeroCarousel />
         </div>
 

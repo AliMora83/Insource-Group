@@ -10,7 +10,7 @@ export function Contact() {
       <div style={{ position:"absolute", bottom:0, left:0, width:260, height:260, borderRadius:"50%", background:`radial-gradient(circle, rgba(176,78,160,.12) 0%, transparent 70%)` }} />
 
       <div style={{ maxWidth:1140, margin:"0 auto", position:"relative" }}>
-        <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:96, alignItems:"start" }}>
+        <div className="contact-grid" style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:96, alignItems:"start" }}>
 
           <div>
             <Reveal dir="left">

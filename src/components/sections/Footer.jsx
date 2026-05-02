@@ -2,7 +2,7 @@ import { PURPLE, WHITE } from "../../constants/theme";
 
 export function Footer() {
   return (
-    <footer style={{ background:"#111110", borderTop:"1px solid rgba(255,255,255,.06)", padding:"26px 64px", display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:12 }}>
+    <footer className="footer-container" style={{ background:"#111110", borderTop:"1px solid rgba(255,255,255,.06)", padding:"26px 64px", display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:12 }}>
       <div style={{ display:"flex", alignItems:"center", gap:8 }}>
         <div style={{ width:26, height:26, borderRadius:"50%", background:PURPLE, display:"flex", alignItems:"center", justifyContent:"center" }}>
           <span style={{ fontFamily:"'Playfair Display',serif", fontSize:12, fontWeight:700, color:WHITE }}>I</span>

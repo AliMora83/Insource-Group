@@ -162,6 +162,50 @@ const css = `
 
   input::placeholder, textarea::placeholder { color: rgba(255,255,255,.3); }
   input, textarea { outline: none; transition: border-color .25s; }
+
+  .mobile-toggle { display: none; }
+  .nav-menu { display: flex; gap: 36px; }
+  .nav-cta { display: flex; }
+
+  @media (max-width: 991px) {
+    .nav-menu {
+      position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+      background: ${WHITE};
+      flex-direction: column; align-items: center; justify-content: center;
+      gap: 32px; transform: translateX(100%);
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 99;
+    }
+    .nav-menu.active { transform: translateX(0); }
+    .nav-link { font-size: 18px; }
+    .mobile-toggle {
+      display: flex; flex-direction: column; gap: 5px;
+      cursor: pointer; z-index: 101; border: none; background: none;
+      padding: 10px; margin-right: -10px;
+    }
+    .mobile-toggle span {
+      width: 24px; height: 2px; background: ${CHARCOAL};
+      transition: transform 0.3s, opacity 0.3s; transform-origin: center;
+    }
+    .mobile-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+    .mobile-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-cta { display: none; }
+    
+    section { padding: 80px 24px !important; }
+    .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; text-align: center; }
+    .hero-text { order: 2; display: flex; flex-direction: column; align-items: center; }
+    .hero-carousel-container { order: 1; height: 350px !important; width: 100% !important; }
+    .hero-stats { justify-content: center; margin-top: 32px !important; }
+    .hero-title { font-size: 42px !important; margin-bottom: 16px !important; }
+    .about-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+    .team-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+    .contact-grid { grid-template-columns: 1fr !important; gap: 64px !important; }
+    .services-grid { grid-template-columns: 1fr !important; }
+    .gallery-grid { grid-template-columns: 1fr !important; }
+    .gallery-grid > div { grid-column: auto !important; grid-row: auto !important; }
+    .footer-container { flex-direction: column; text-align: center; gap: 24px !important; }
+  }
 `;
 
 export default function InsourceGroup() {
