@@ -1,4 +1,5 @@
-import { PURPLE, PURPLE_LIGHT, WHITE, CHARCOAL, MUTED } from "../../constants/theme";
+import logoBlack from "../../assets/IG Logo-black.png";
+import logoWhite from "../../assets/IG Logo-white.png";
 
 export function Nav({ nav }) {
   return (
@@ -11,22 +12,26 @@ export function Nav({ nav }) {
       padding:"18px 64px",
       display:"flex", alignItems:"center", justifyContent:"space-between",
     }}>
-      {/* Logo */}
-      <div style={{ display:"flex", alignItems:"center", gap:10, animation:"fadeDown .7s ease both" }}>
-        <div style={{ width:36, height:36, borderRadius:"50%", background:`linear-gradient(135deg,${PURPLE} 0%,${PURPLE_LIGHT} 100%)`, display:"flex", alignItems:"center", justifyContent:"center" }}>
-          <span style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700, color:WHITE, lineHeight:1 }}>I</span>
-        </div>
-        <div>
-          <div style={{ fontFamily:"'DM Sans',sans-serif", fontWeight:500, fontSize:16, color:CHARCOAL, letterSpacing:".04em", lineHeight:1.1 }}>
-            In<span style={{ color:PURPLE }}>Source</span><span style={{ color:PURPLE }}>.</span>
-          </div>
-          <div style={{ fontSize:8, letterSpacing:".22em", textTransform:"uppercase", color:MUTED, fontWeight:400 }}>Group</div>
-        </div>
-      </div>
+      {/* Logo — switches between white (hero) and black (scrolled) */}
+      <a href="#" style={{ display:"flex", alignItems:"center", animation:"fadeDown .7s ease both", lineHeight:0 }}>
+        <img
+          src={nav ? logoBlack : logoWhite}
+          alt="InSource Group"
+          style={{
+            height: 40,
+            width: "auto",
+            objectFit: "contain",
+            transition: "opacity .4s",
+          }}
+        />
+      </a>
 
       <div style={{ display:"flex", gap:36, animation:"fadeDown .7s ease .1s both" }}>
         {["About","Services","Gallery","Team","Contact"].map(n => (
-          <a key={n} href={`#${n.toLowerCase()}`} className="nav-link">{n}</a>
+          <a key={n} href={`#${n.toLowerCase()}`} className="nav-link"
+            style={{ color: nav ? undefined : "rgba(255,255,255,.85)" }}>
+            {n}
+          </a>
         ))}
       </div>
 
@@ -34,3 +39,4 @@ export function Nav({ nav }) {
     </nav>
   );
 }
+
