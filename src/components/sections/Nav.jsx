@@ -18,7 +18,7 @@ export function Nav({ nav }) {
           src={nav ? logoBlack : logoWhite}
           alt="InSource Group"
           style={{
-            height: 40,
+            height: 56,
             width: "auto",
             objectFit: "contain",
             transition: "opacity .4s",
