@@ -1,5 +1,4 @@
 import logoBlack from "../../assets/IG Logo-black.png";
-import logoWhite from "../../assets/IG Logo-white.png";
 
 export function Nav({ nav }) {
   return (
@@ -12,10 +11,10 @@ export function Nav({ nav }) {
       padding:"18px 64px",
       display:"flex", alignItems:"center", justifyContent:"space-between",
     }}>
-      {/* Logo — switches between white (hero) and black (scrolled) */}
+      {/* Logo — always black (light hero background) */}
       <a href="#" style={{ display:"flex", alignItems:"center", animation:"fadeDown .7s ease both", lineHeight:0 }}>
         <img
-          src={nav ? logoBlack : logoWhite}
+          src={logoBlack}
           alt="InSource Group"
           style={{
             height: 56,
@@ -28,10 +27,7 @@ export function Nav({ nav }) {
 
       <div style={{ display:"flex", gap:36, animation:"fadeDown .7s ease .1s both" }}>
         {["About","Services","Gallery","Team","Contact"].map(n => (
-          <a key={n} href={`#${n.toLowerCase()}`} className="nav-link"
-            style={{ color: nav ? undefined : "rgba(255,255,255,.85)" }}>
-            {n}
-          </a>
+          <a key={n} href={`#${n.toLowerCase()}`} className="nav-link">{n}</a>
         ))}
       </div>
 
