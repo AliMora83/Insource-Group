@@ -1,4 +1,4 @@
-import { PURPLE, PURPLE_TINT, PURPLE_TINT2, CHARCOAL, BODY, MUTED, WHITE, BORDER } from "../../constants/theme";
+import { PURPLE, PURPLE_TINT, PURPLE_TINT2, CHARCOAL, BODY, WHITE, BORDER } from "../../constants/theme";
 import { Reveal } from "../common/Reveal";
 import { Label } from "../common/Label";
 
