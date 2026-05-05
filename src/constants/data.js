@@ -1,12 +1,12 @@
 export const SERVICES = [
-  { num:"01", icon:"gift",  title:"Corporate Gifts & Clothing",          desc:"Premium branded apparel and curated corporate gifts that elevate your brand identity and leave a lasting impression on clients and colleagues." },
-  { num:"02", icon:"print", title:"Branding & Printing",                 desc:"High-impact design, signage, and print solutions that bring your brand to life — from concept through to a flawless finished product." },
-  { num:"03", icon:"badge", title:"RSVP & Event Accreditation Services", desc:"Seamless guest management, digital RSVP systems, and professional on-site accreditation for events of every size and scale." },
-  { num:"04", icon:"truck", title:"Event Management & Logistics Supply", desc:"End-to-end event planning, coordination, and reliable supply of equipment and infrastructure — delivered with precision." },
-  { num:"05", icon:"sofa",  title:"Event Furniture & Décor",             desc:"Stylish furniture, décor, and theming solutions that transform spaces and create unforgettable event experiences." },
+  { num: "01", icon: "gift", title: "Corporate Gifts & Clothing", desc: "Premium branded apparel and curated corporate gifts that elevate your brand identity and leave a lasting impression on clients and colleagues." },
+  { num: "02", icon: "print", title: "Branding & Printing", desc: "High-impact design, signage, and print solutions that bring your brand to life — from concept through to a flawless finished product." },
+  { num: "03", icon: "badge", title: "Guest Relations & Event Accreditation Services", desc: "Seamless guest management, digital RSVP systems, and professional on-site accreditation for events of every size and scale." },
+  { num: "04", icon: "truck", title: "Event Management & Logistics Supply", desc: "End-to-end event planning, coordination, and reliable supply of equipment and infrastructure — delivered with precision." },
+  { num: "05", icon: "sofa", title: "Event Furniture & Décor", desc: "Stylish furniture, décor, and theming solutions that transform spaces and create unforgettable event experiences." },
 ];
 
-export const VALUES = ["Professional","Reliable","Innovative","Customer Focused"];
+export const VALUES = ["Professional", "Reliable", "Innovative", "Customer Focused"];
 
 export const GALLERY_TINTS = [
   `linear-gradient(135deg, #EDD9EA 0%, #D8B8D5 100%)`,
@@ -18,11 +18,11 @@ export const GALLERY_TINTS = [
   `linear-gradient(135deg, #E6D0E6 0%, #C0A0C0 100%)`,
 ];
 
-export const GALLERY_ICONS = ["◈","◎","◇","◉","◆","◐","◑"];
+export const GALLERY_ICONS = ["◈", "◎", "◇", "◉", "◆", "◐", "◑"];
 
 export const CONTACT_DETAILS = [
-  { label:"General Enquiries",  value:"admin@insourcegroup.co.za",      href:"mailto:admin@insourcegroup.co.za",      sym:"✉" },
-  { label:"Project Manager",     value:"production@insourcegroup.co.za", href:"mailto:production@insourcegroup.co.za", sym:"◈" },
-  { label:"Phone",               value:"075 201 2968  ·  084 819 8090",  href:"tel:0752012968",                        sym:"◎" },
-  { label:"Address",             value:"71 Anna Street, Carletonville, 2499", href:"#",                               sym:"◇" },
+  { label: "General Enquiries", value: "admin@insourcegroup.co.za", href: "mailto:admin@insourcegroup.co.za", sym: "✉" },
+  { label: "Project Manager", value: "production@insourcegroup.co.za", href: "mailto:production@insourcegroup.co.za", sym: "◈" },
+  { label: "Phone", value: "075 201 2968", href: "tel:0752012968", sym: "◎" },
+  { label: "Address", value: "Benchmark Office Park, 1 Larch Nook, Zwartkop, Centurion, 0157", href: "#", sym: "◇" },
 ];

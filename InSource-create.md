@@ -442,7 +442,7 @@ Find the contact array in the contact section and update with current details:
 { label:"General Enquiries",  value:"admin@insourcegroup.co.za",      href:"mailto:admin@insourcegroup.co.za" },
 { label:"Project Manager",    value:"production@insourcegroup.co.za", href:"mailto:production@insourcegroup.co.za" },
 { label:"Phone",              value:"075 201 2968  ·  084 819 8090",  href:"tel:0752012968" },
-{ label:"Address",            value:"71 Anna Street, Carletonville, 2499", href:"#" },
+{ label:"Address",            value:"Benchmark Office Park, 1 Larch Nook, Zwartkop, Centurion, 0157", href:"#" },
 ```
 
 ### Hero carousel timing
@@ -515,5 +515,5 @@ Use this checklist to track your progress:
 
 ---
 
-*Built for InSource Group — Carletonville, South Africa*  
+*Built for InSource Group — Centurion, South Africa*  
 *"Your Vision: Our Expertise, Flawless Execution."*

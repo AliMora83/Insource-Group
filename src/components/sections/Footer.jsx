@@ -8,7 +8,7 @@ export function Footer() {
         <img src={logoWhite} alt="InSource Group" style={{ height: 36, width: "auto", objectFit: "contain", opacity: 0.9 }} />
       </div>
       <div style={{ fontSize:12, color:"rgba(255,255,255,.6)", letterSpacing:".06em", fontWeight:400 }}>
-        © 2025 Insource Group · Carletonville, South Africa
+        © 2026 Insource Group · Centurion, South Africa
       </div>
       <div style={{ fontSize:11, letterSpacing:".1em", textTransform:"uppercase", color:"rgba(255,255,255,.5)", fontStyle:"italic", fontFamily:"'Playfair Display',serif" }}>
         Your Vision: Our Expertise, Flawless Execution.

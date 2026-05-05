@@ -23,7 +23,7 @@ export function Hero() {
         {/* LEFT — copy */}
         <div className="hero-text" style={{ position:"relative" }}>
           <div style={{ animation:"fadeUp .7s ease .2s both" }}>
-            <Label>Proudly Woman-Owned · Carletonville, SA</Label>
+            <Label>Proudly Woman-Owned · Centurion, SA</Label>
           </div>
           <h1 className="serif hero-title" style={{
             fontSize:"clamp(38px,5.5vw,80px)", fontWeight:400, lineHeight:1.05,
